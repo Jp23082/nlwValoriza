@@ -21,3 +21,12 @@ export {CreateUserController};
 /*Controllers são responsaveis por armazenar os requests e reponses da aplicação, faz a intermediação
 entre o server.ts e a camada de service
 */
+
+/**
+ * Fluxo da aplicação
+ * server -> routes -> Controller -> Service (throw new Error)
+ * Tratativa de erros são realizados no server.
+ * 
+ * Middlewares: Interceptadores dentro de uma requisição. Podemos interromper ou adicionar informações 
+ * a requisições. ex: app.use
+ */
