@@ -109,3 +109,17 @@ o objeto. */
   durante o fluxo. Como por exemplo habilitar o json através do app.use(express.json())
 */
   
+/**
+ * JWT - JSon Web Token
+ * Trata-se de um token criptografado que acompanha as requisições com objetivo
+ * de validar se o usuário que as faz é um usuário que tem privlégios para acessar determinada rota
+ * um token é dividido em 3 partes.
+ * - Header: Cabeçalho
+ * - Payload: Armazena informações do usuário(Nome, email, id, ...)
+ * - Verify Signature: Verifica se o token é valido
+ * Esse token possui um tempo de expiração
+ * 
+ * Instalando o JWT
+ * yarn add jsonwebtoken
+ * yarn add @types/jsonwebtoken -D
+ */
