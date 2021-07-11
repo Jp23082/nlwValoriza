@@ -3,6 +3,7 @@
 // Instalar as tipagens - yarn add @types/express
 import express, { Request, Response, NextFunction } from "express";
 import "express-async-errors";
+import cors from "cors";
 
 //importando o ormtype
 import "reflect-metadata";
@@ -15,6 +16,10 @@ import { router } from "./routes"
 
 //Inicializando a variavel express
 const app = express()
+
+//Para utilizar o backend com um possivel frontend
+//Habilita que outras fontes que não sejam aplicações backend utilizem a aplicação
+app.use(cors());
 
 //Indica que o tipo de requisição será realizado com JSON
 app.use(express.json());
